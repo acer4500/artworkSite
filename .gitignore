@@ -12,3 +12,14 @@ out/
 # misc
 .DS_Store
 *.pem
+*.swp
+*.HEIC
+
+# claude
+.claude/
+
+# next.js auto-generated
+next-env.d.ts
+
+# project notes
+instructions.md
