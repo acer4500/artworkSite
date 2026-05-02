@@ -27,3 +27,5 @@ next-env.d.ts
 
 # project notes
 instructions.md
+
+node_modules
