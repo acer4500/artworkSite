@@ -1,0 +1,69 @@
+{
+  "headline": "I make paintings and drawings that sit in the space between observation and imagination.",
+  "bio": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Based between London and the countryside, my work is rooted in close attention to light, material, and place. I am drawn to the overlooked — a doorway, a field after rain, the geometry of afternoon shadows — and to finding in these things something that resists easy explanation."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "I studied at the Slade School of Fine Art and have shown work in group and solo exhibitions across the UK and Europe. I also take on a small number of commissions each year."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "If you are interested in a work, a commission, or simply want to talk about painting, I would love to hear from you."
+          }
+        ]
+      }
+    ]
+  },
+  "education": [
+    {
+      "year": "2018",
+      "description": "Slade School of Fine Art, MFA"
+    },
+    {
+      "year": "2016",
+      "description": "Edinburgh College of Art, BA (Hons)"
+    }
+  ],
+  "exhibitions": [
+    {
+      "year": "2023",
+      "description": "New Paintings, Fold Gallery, London"
+    },
+    {
+      "year": "2022",
+      "description": "Material Evidence, group show, Edinburgh"
+    },
+    {
+      "year": "2021",
+      "description": "Degrees of Attention, Kunsthalle, Berlin"
+    },
+    {
+      "year": "2020",
+      "description": "Summer Exhibition, Royal Academy, London"
+    }
+  ],
+  "collections": [
+    {
+      "name": "Private collections, UK, Germany, and USA"
+    }
+  ],
+  "contactEmail": "hello@studio.com"
+}

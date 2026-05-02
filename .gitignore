@@ -18,6 +18,10 @@ out/
 # claude
 .claude/
 
+# tinacms
+tina/__generated__
+public/admin
+
 # next.js auto-generated
 next-env.d.ts
 

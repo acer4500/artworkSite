@@ -1,4 +1,5 @@
 import { getAllArtworks, getArtworkBySlug } from "@/lib/artwork";
+import { getAboutContent } from "@/lib/about";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -23,6 +24,8 @@ export default async function ArtworkPage({ params }: Props) {
   const artwork = await getArtworkBySlug(slug);
 
   if (!artwork) notFound();
+
+  const { contactEmail } = getAboutContent();
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16">
@@ -78,7 +81,7 @@ export default async function ArtworkPage({ params }: Props) {
 
           <div className="pt-2">
             <a
-              href="mailto:hello@studio.com"
+              href={`mailto:${contactEmail}`}
               className="inline-block text-sm border border-stone-800 text-stone-800 px-6 py-3 hover:bg-stone-800 hover:text-white transition-colors"
             >
               Enquire about this work
