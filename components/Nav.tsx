@@ -8,7 +8,7 @@ export default function Nav() {
           href="/"
           className="text-sm font-medium tracking-widest uppercase text-stone-800 hover:text-stone-500 transition-colors"
         >
-          Studio
+          Autumn Canvas
         </Link>
         <Link
           href="/about"
