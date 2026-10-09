@@ -37,7 +37,7 @@ export default function About() {
               Education
             </h2>
             <ul className="space-y-2 text-sm text-stone-600">
-              {about.education.map((entry, i) => (
+              {(about.education ?? []).map((entry, i) => (
                 <li key={i} className="flex justify-between">
                   <span>{entry.description}</span>
                   <span className="text-stone-400">{entry.year}</span>
@@ -50,7 +50,7 @@ export default function About() {
               Selected Exhibitions
             </h2>
             <ul className="space-y-2 text-sm text-stone-600">
-              {about.exhibitions.map((entry, i) => (
+              {(about.exhibitions ?? []).map((entry, i) => (
                 <li key={i} className="flex justify-between gap-4">
                   <span>{entry.description}</span>
                   <span className="text-stone-400 shrink-0">{entry.year}</span>
@@ -63,7 +63,7 @@ export default function About() {
               Collections
             </h2>
             <ul className="space-y-2 text-sm text-stone-600">
-              {about.collections.map((entry, i) => (
+              {(about.collections ?? []).map((entry, i) => (
                 <li key={i}>{entry.name}</li>
               ))}
             </ul>
