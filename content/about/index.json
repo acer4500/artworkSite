@@ -1,6 +1,19 @@
 {
   "headline": "I make paintings and drawings that sit in the space between observation and imagination.",
-  "bio": "I am a self taught acrylic painter based in Kitchener Ontario. I have been painting ever since I was a little girl, I paint what inspires me…women, animals, and nature!\n",
+  "bio": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "I am a self taught acrylic painter based in Kitchener Ontario. I have been painting ever since I was a little girl, I paint what inspires me…women, animals, and nature!"
+          }
+        ]
+      }
+    ]
+  },
   "education": [
     {
       "year": "2025",
@@ -13,5 +26,6 @@
       "description": "Emancipation Art, Helson Gallery, Halton Hills"
     }
   ],
-  "contactEmail": "madefrei@uwaterloo.ca"
+  "contactEmail": "madefrei@uwaterloo.ca",
+  "collections": []
 }
