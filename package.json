@@ -6,7 +6,7 @@
     "dev": "tinacms dev -c \"next dev --webpack\"",
     "build": "tinacms build && next build --webpack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@tinacms/cli": "^2.2.5",
@@ -25,6 +25,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.27",
+    "eslint": "^10.14.0",
+    "eslint-config-next": "^16.4.3",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3"
