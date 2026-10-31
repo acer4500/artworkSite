@@ -142,6 +142,9 @@ function securityHeaders(contentSecurityPolicy: string, frameOptions: string) {
 }
 
 const nextConfig: NextConfig = {
+  // Next.js 16 runs `next build` with Turbopack and rejects a webpack hook
+  // unless this key is set. `npm run build` still passes `--webpack`.
+  turbopack: {},
   outputFileTracingRoot: path.join(__dirname),
   // Next.js 16 runs `next build` with Turbopack and refuses to start when a
   // webpack hook is present unless Turbopack is acknowledged. `npm run build`
