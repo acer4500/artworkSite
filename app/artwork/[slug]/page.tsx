@@ -1,5 +1,6 @@
+import { ProtectedEmailLink } from "@/components/ProtectedEmailLink";
+import { encodeContactEmail, getAboutContent } from "@/lib/about";
 import { getAllArtworks, getArtworkBySlug } from "@/lib/artwork";
-import { getAboutContent } from "@/lib/about";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -80,12 +81,12 @@ export default async function ArtworkPage({ params }: Props) {
           </div>
 
           <div className="pt-2">
-            <a
-              href={`mailto:${contactEmail}`}
+            <ProtectedEmailLink
+              codes={encodeContactEmail(contactEmail)}
               className="inline-block text-sm border border-stone-800 text-stone-800 px-6 py-3 hover:bg-stone-800 hover:text-white transition-colors"
             >
               Enquire about this work
-            </a>
+            </ProtectedEmailLink>
           </div>
         </div>
       </div>

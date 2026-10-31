@@ -25,6 +25,9 @@ public/admin
 # next.js auto-generated
 next-env.d.ts
 
+# typescript incremental cache
+*.tsbuildinfo
+
 # project notes
 instructions.md
 

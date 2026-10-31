@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { getAboutContent } from "@/lib/about";
+import { ProtectedEmailLink } from "@/components/ProtectedEmailLink";
 import { TinaRichText } from "@/components/TinaRichText";
+import { encodeContactEmail, getAboutContent } from "@/lib/about";
 
 export const metadata: Metadata = {
   title: "About — Studio",
@@ -23,12 +24,10 @@ export default function About() {
             <TinaRichText content={about.bio} />
           </div>
           <div className="mt-12 pt-8 border-t border-stone-100">
-            <a
-              href={`mailto:${about.contactEmail}`}
+            <ProtectedEmailLink
+              codes={encodeContactEmail(about.contactEmail)}
               className="text-sm text-stone-800 hover:text-stone-400 transition-colors underline underline-offset-4"
-            >
-              {about.contactEmail}
-            </a>
+            />
           </div>
         </div>
         <div className="space-y-8">
